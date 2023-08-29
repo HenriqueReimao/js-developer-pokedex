@@ -84,7 +84,7 @@ let currentOffset = offset;
 function loadNextPokemon() {
     if (currentOffset < limit) {
         load_more_pokemons(currentOffset, 1);
-        currentOffset += 10;
+        currentOffset += 1;
     } else {
         alert('Todos os Pokémon já foram carregados!');
         loadNextButton.disabled = true; // Desabilitar o botão após carregar todos os Pokémon
